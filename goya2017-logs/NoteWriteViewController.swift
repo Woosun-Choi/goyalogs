@@ -120,7 +120,10 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
     @IBAction func backButtonAction(_ sender: UIButton) {
         //print(hashTagList)
         
-        if imageData.count != 0 {
+        let deleteindex : Int = imageData.count - 1
+        
+        
+        /*if imageData.count != 0 {
             
             for index in 0..<imageData.count {
                 let path = getDocumentDirectory() + "/img/" + imageData[index].fileName + ".jpg"
@@ -134,9 +137,7 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
             }
             
             imageData.removeAll()
-        }
-        
-        if imageData.count == 0 {
+        }*/
         
         for image in willsaveImage {
             
@@ -194,6 +195,20 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
                 imageData.append(obj)
             }
         }
+        
+        for index in 0...deleteindex {
+            let path = getDocumentDirectory() + "/img/" + imageData[index].fileName + ".jpg"
+            do {
+                try FileManager.default.removeItem(atPath: path)
+            } catch _ as NSError {}
+            let thumbpath = getDocumentDirectory() + "/img/" + imageData[index].fileName + "-thumbnail.jpg"
+            do {
+                try FileManager.default.removeItem(atPath: thumbpath)
+            } catch _ as NSError {}
+        }
+        
+        for _ in 0...deleteindex {
+            imageData.remove(at: 0)
         }
         
         print(imageData.count)
