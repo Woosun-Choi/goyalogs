@@ -120,25 +120,10 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
     @IBAction func backButtonAction(_ sender: UIButton) {
         //print(hashTagList)
         
+        //MARK: get imageData file counts to remove
         let deleteindex : Int = imageData.count - 1
         
-        
-        /*if imageData.count != 0 {
-            
-            for index in 0..<imageData.count {
-                let path = getDocumentDirectory() + "/img/" + imageData[index].fileName + ".jpg"
-                do {
-                    try FileManager.default.removeItem(atPath: path)
-                } catch _ as NSError {}
-                let thumbpath = getDocumentDirectory() + "/img/" + imageData[index].fileName + "-thumbnail.jpg"
-                do {
-                    try FileManager.default.removeItem(atPath: thumbpath)
-                } catch _ as NSError {}
-            }
-            
-            imageData.removeAll()
-        }*/
-        
+        //MARK: make new imageData
         for image in willsaveImage {
             
             let name = self.hashCreate(length: 32)
@@ -160,7 +145,7 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
             UIGraphicsEndImageContext()
             
             do {
-                let jpgImage = UIImageJPEGRepresentation(ctx!, 1.0)
+                let jpgImage = UIImageJPEGRepresentation(ctx!, 0.8)
                 try jpgImage?.write(to: URL(fileURLWithPath: filePath))
             } catch _ as NSError {}
             
@@ -177,7 +162,7 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
             UIGraphicsEndImageContext()
             
             do {
-                let jpgImage = UIImageJPEGRepresentation(tempImage!, 1)
+                let jpgImage = UIImageJPEGRepresentation(tempImage!, 0.8)
                 try jpgImage?.write(to: URL(fileURLWithPath: tempFilePath))
             } catch let error as NSError {
                 print(error)
@@ -227,15 +212,17 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
                     self.note.images.append(img)
                 }
                 //realm.delete(note)
-            } else {
-            
-            note = realm.create(Note.self)
-            note.text = textField.text
-            note.date = Date()
-            
-            for img in imageData {
-                note.images.append(img)
             }
+            
+            else {
+            
+                note = realm.create(Note.self)
+                note.text = textField.text
+                note.date = Date()
+            
+                for img in imageData {
+                    note.images.append(img)
+                }
             }
         }
         
