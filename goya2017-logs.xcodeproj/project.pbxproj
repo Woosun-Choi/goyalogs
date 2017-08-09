@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A77AD12F1F2993ED00BD9DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD12E1F2993ED00BD9DC4 /* AppDelegate.swift */; };
+		A77AD1311F2993ED00BD9DC4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1301F2993ED00BD9DC4 /* MainView.swift */; };
+		A77AD1341F2993ED00BD9DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77AD1321F2993ED00BD9DC4 /* Main.storyboard */; };
+		A77AD1371F2993ED00BD9DC4 /* goya2017_logs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1351F2993ED00BD9DC4 /* goya2017_logs.xcdatamodeld */; };
+		A77AD1391F2993ED00BD9DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77AD1381F2993ED00BD9DC4 /* Assets.xcassets */; };
+		A77AD13C1F2993ED00BD9DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77AD13A1F2993ED00BD9DC4 /* LaunchScreen.storyboard */; };
+		A77AD1471F2993EE00BD9DC4 /* goya2017_logsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1461F2993EE00BD9DC4 /* goya2017_logsTests.swift */; };
+		A77AD1521F2993EE00BD9DC4 /* goya2017_logsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1511F2993EE00BD9DC4 /* goya2017_logsUITests.swift */; };
+		A77AD1621F299B9E00BD9DC4 /* NoteWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1611F299B9E00BD9DC4 /* NoteWriteViewController.swift */; };
+		A77AD1641F299D0A00BD9DC4 /* DateLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1631F299D0A00BD9DC4 /* DateLabelView.swift */; };
+		A77AD1661F29ABF200BD9DC4 /* HashTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1651F29ABF200BD9DC4 /* HashTagView.swift */; };
+		A77AD1681F29AD6F00BD9DC4 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1671F29AD6F00BD9DC4 /* NoteTableViewCell.swift */; };
+		A77AD16A1F29BED000BD9DC4 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1691F29BED000BD9DC4 /* Note.swift */; };
+		A77AD16C1F29BFFB00BD9DC4 /* HashTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD16B1F29BFFB00BD9DC4 /* HashTag.swift */; };
+		A77AD16E1F2A3BD800BD9DC4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD16D1F2A3BD800BD9DC4 /* Image.swift */; };
+		A77AD1711F2A426F00BD9DC4 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1701F2A426F00BD9DC4 /* ContentViewController.swift */; };
+		A77AD1781F2A60A300BD9DC4 /* PhotoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AD1771F2A60A300BD9DC4 /* PhotoSelectViewController.swift */; };
+		A7B76BA51F2CDD9500A8171D /* dataCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B76BA41F2CDD9500A8171D /* dataCollectionView.swift */; };
+		A7B76BA71F2CDDA700A8171D /* resultCollectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B76BA61F2CDDA700A8171D /* resultCollectionview.swift */; };
+		A7B76BA91F32E09400A8171D /* PhotoSelectDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B76BA81F32E09400A8171D /* PhotoSelectDelegate.swift */; };
+		E58C81B5A0BB6205CB6ABBE2 /* Pods_goya2017_logsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99501B48BD27281C7588E8B6 /* Pods_goya2017_logsUITests.framework */; };
+		F0A8757C40B2BAF76277897B /* Pods_goya2017_logsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6979CB26EF521200AE86C5 /* Pods_goya2017_logsTests.framework */; };
+		FFBECE34306F3B784DABB585 /* Pods_goya2017_logs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B621B3F2DB9AB8EDB6F751 /* Pods_goya2017_logs.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A77AD1431F2993EE00BD9DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77AD1231F2993ED00BD9DC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77AD12A1F2993ED00BD9DC4;
+			remoteInfo = "goya2017-logs";
+		};
+		A77AD14E1F2993EE00BD9DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77AD1231F2993ED00BD9DC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77AD12A1F2993ED00BD9DC4;
+			remoteInfo = "goya2017-logs";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B9F57F8676A7F5C9B091432 /* Pods-goya2017-logs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goya2017-logs.release.xcconfig"; path = "Pods/Target Support Files/Pods-goya2017-logs/Pods-goya2017-logs.release.xcconfig"; sourceTree = "<group>"; };
+		16B621B3F2DB9AB8EDB6F751 /* Pods_goya2017_logs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goya2017_logs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6979CB26EF521200AE86C5 /* Pods_goya2017_logsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goya2017_logsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23588913FA247EC0561CAB4C /* Pods-goya2017-logsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goya2017-logsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-goya2017-logsTests/Pods-goya2017-logsTests.release.xcconfig"; sourceTree = "<group>"; };
+		588C6813776A9D5E1418A2F6 /* Pods-goya2017-logsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goya2017-logsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-goya2017-logsUITests/Pods-goya2017-logsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AEAA22F2C780C6394AA7879 /* Pods-goya2017-logsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goya2017-logsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-goya2017-logsTests/Pods-goya2017-logsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99501B48BD27281C7588E8B6 /* Pods_goya2017_logsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goya2017_logsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77AD12B1F2993ED00BD9DC4 /* goya2017-logs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goya2017-logs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77AD12E1F2993ED00BD9DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A77AD1301F2993ED00BD9DC4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A77AD1331F2993ED00BD9DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A77AD1361F2993ED00BD9DC4 /* goya2017_logs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = goya2017_logs.xcdatamodel; sourceTree = "<group>"; };
+		A77AD1381F2993ED00BD9DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77AD13B1F2993ED00BD9DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A77AD13D1F2993ED00BD9DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77AD1421F2993EE00BD9DC4 /* goya2017-logsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "goya2017-logsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77AD1461F2993EE00BD9DC4 /* goya2017_logsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goya2017_logsTests.swift; sourceTree = "<group>"; };
+		A77AD1481F2993EE00BD9DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77AD14D1F2993EE00BD9DC4 /* goya2017-logsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "goya2017-logsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77AD1511F2993EE00BD9DC4 /* goya2017_logsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goya2017_logsUITests.swift; sourceTree = "<group>"; };
+		A77AD1531F2993EE00BD9DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77AD1611F299B9E00BD9DC4 /* NoteWriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteWriteViewController.swift; sourceTree = "<group>"; };
+		A77AD1631F299D0A00BD9DC4 /* DateLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateLabelView.swift; sourceTree = "<group>"; };
+		A77AD1651F29ABF200BD9DC4 /* HashTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTagView.swift; sourceTree = "<group>"; };
+		A77AD1671F29AD6F00BD9DC4 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		A77AD1691F29BED000BD9DC4 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A77AD16B1F29BFFB00BD9DC4 /* HashTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTag.swift; sourceTree = "<group>"; };
+		A77AD16D1F2A3BD800BD9DC4 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		A77AD1701F2A426F00BD9DC4 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		A77AD1771F2A60A300BD9DC4 /* PhotoSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectViewController.swift; sourceTree = "<group>"; };
+		A7B76BA41F2CDD9500A8171D /* dataCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataCollectionView.swift; sourceTree = "<group>"; };
+		A7B76BA61F2CDDA700A8171D /* resultCollectionview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultCollectionview.swift; sourceTree = "<group>"; };
+		A7B76BA81F32E09400A8171D /* PhotoSelectDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectDelegate.swift; sourceTree = "<group>"; };
+		CF5A8CF2CFD805CD54DFE95A /* Pods-goya2017-logs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goya2017-logs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-goya2017-logs/Pods-goya2017-logs.debug.xcconfig"; sourceTree = "<group>"; };
+		D5EC791E3FEBB46B712ADF0D /* Pods-goya2017-logsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goya2017-logsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-goya2017-logsUITests/Pods-goya2017-logsUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A77AD1281F2993ED00BD9DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBECE34306F3B784DABB585 /* Pods_goya2017_logs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77AD13F1F2993EE00BD9DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A8757C40B2BAF76277897B /* Pods_goya2017_logsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77AD14A1F2993EE00BD9DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58C81B5A0BB6205CB6ABBE2 /* Pods_goya2017_logsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71485CB414706E1DB4D9FE0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF5A8CF2CFD805CD54DFE95A /* Pods-goya2017-logs.debug.xcconfig */,
+				0B9F57F8676A7F5C9B091432 /* Pods-goya2017-logs.release.xcconfig */,
+				5AEAA22F2C780C6394AA7879 /* Pods-goya2017-logsTests.debug.xcconfig */,
+				23588913FA247EC0561CAB4C /* Pods-goya2017-logsTests.release.xcconfig */,
+				588C6813776A9D5E1418A2F6 /* Pods-goya2017-logsUITests.debug.xcconfig */,
+				D5EC791E3FEBB46B712ADF0D /* Pods-goya2017-logsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A77AD1221F2993ED00BD9DC4 = {
+			isa = PBXGroup;
+			children = (
+				A77AD12D1F2993ED00BD9DC4 /* goya2017-logs */,
+				A77AD1451F2993EE00BD9DC4 /* goya2017-logsTests */,
+				A77AD1501F2993EE00BD9DC4 /* goya2017-logsUITests */,
+				A77AD12C1F2993ED00BD9DC4 /* Products */,
+				71485CB414706E1DB4D9FE0F /* Pods */,
+				E903D5A0A4101A03C9B830BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A77AD12C1F2993ED00BD9DC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A77AD12B1F2993ED00BD9DC4 /* goya2017-logs.app */,
+				A77AD1421F2993EE00BD9DC4 /* goya2017-logsTests.xctest */,
+				A77AD14D1F2993EE00BD9DC4 /* goya2017-logsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A77AD12D1F2993ED00BD9DC4 /* goya2017-logs */ = {
+			isa = PBXGroup;
+			children = (
+				A77AD1721F2A583600BD9DC4 /* PhotoSelectView */,
+				A77AD16F1F2A423E00BD9DC4 /* NoteWriteView */,
+				A77AD1321F2993ED00BD9DC4 /* Main.storyboard */,
+				A77AD12E1F2993ED00BD9DC4 /* AppDelegate.swift */,
+				A77AD1301F2993ED00BD9DC4 /* MainView.swift */,
+				A77AD1671F29AD6F00BD9DC4 /* NoteTableViewCell.swift */,
+				A77AD1381F2993ED00BD9DC4 /* Assets.xcassets */,
+				A77AD13A1F2993ED00BD9DC4 /* LaunchScreen.storyboard */,
+				A77AD13D1F2993ED00BD9DC4 /* Info.plist */,
+				A77AD1351F2993ED00BD9DC4 /* goya2017_logs.xcdatamodeld */,
+				A77AD1631F299D0A00BD9DC4 /* DateLabelView.swift */,
+				A77AD1651F29ABF200BD9DC4 /* HashTagView.swift */,
+				A77AD1691F29BED000BD9DC4 /* Note.swift */,
+				A77AD16B1F29BFFB00BD9DC4 /* HashTag.swift */,
+				A77AD16D1F2A3BD800BD9DC4 /* Image.swift */,
+			);
+			path = "goya2017-logs";
+			sourceTree = "<group>";
+		};
+		A77AD1451F2993EE00BD9DC4 /* goya2017-logsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A77AD1461F2993EE00BD9DC4 /* goya2017_logsTests.swift */,
+				A77AD1481F2993EE00BD9DC4 /* Info.plist */,
+			);
+			path = "goya2017-logsTests";
+			sourceTree = "<group>";
+		};
+		A77AD1501F2993EE00BD9DC4 /* goya2017-logsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A77AD1511F2993EE00BD9DC4 /* goya2017_logsUITests.swift */,
+				A77AD1531F2993EE00BD9DC4 /* Info.plist */,
+			);
+			path = "goya2017-logsUITests";
+			sourceTree = "<group>";
+		};
+		A77AD16F1F2A423E00BD9DC4 /* NoteWriteView */ = {
+			isa = PBXGroup;
+			children = (
+				A77AD1611F299B9E00BD9DC4 /* NoteWriteViewController.swift */,
+				A77AD1701F2A426F00BD9DC4 /* ContentViewController.swift */,
+				A7B76BA81F32E09400A8171D /* PhotoSelectDelegate.swift */,
+			);
+			name = NoteWriteView;
+			sourceTree = "<group>";
+		};
+		A77AD1721F2A583600BD9DC4 /* PhotoSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				A77AD1771F2A60A300BD9DC4 /* PhotoSelectViewController.swift */,
+				A7B76BA41F2CDD9500A8171D /* dataCollectionView.swift */,
+				A7B76BA61F2CDDA700A8171D /* resultCollectionview.swift */,
+			);
+			name = PhotoSelectView;
+			sourceTree = "<group>";
+		};
+		E903D5A0A4101A03C9B830BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16B621B3F2DB9AB8EDB6F751 /* Pods_goya2017_logs.framework */,
+				1C6979CB26EF521200AE86C5 /* Pods_goya2017_logsTests.framework */,
+				99501B48BD27281C7588E8B6 /* Pods_goya2017_logsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A77AD12A1F2993ED00BD9DC4 /* goya2017-logs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77AD1561F2993EE00BD9DC4 /* Build configuration list for PBXNativeTarget "goya2017-logs" */;
+			buildPhases = (
+				2B85AEB3C8C08691C2C4B36C /* [CP] Check Pods Manifest.lock */,
+				A77AD1271F2993ED00BD9DC4 /* Sources */,
+				A77AD1281F2993ED00BD9DC4 /* Frameworks */,
+				A77AD1291F2993ED00BD9DC4 /* Resources */,
+				DCDA9DFF9B9B50D28F740A57 /* [CP] Embed Pods Frameworks */,
+				F2FDEBF58E7892BB8DC5BAE5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "goya2017-logs";
+			productName = "goya2017-logs";
+			productReference = A77AD12B1F2993ED00BD9DC4 /* goya2017-logs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A77AD1411F2993EE00BD9DC4 /* goya2017-logsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77AD1591F2993EE00BD9DC4 /* Build configuration list for PBXNativeTarget "goya2017-logsTests" */;
+			buildPhases = (
+				1FA565E284D4DD599CEF5A10 /* [CP] Check Pods Manifest.lock */,
+				A77AD13E1F2993EE00BD9DC4 /* Sources */,
+				A77AD13F1F2993EE00BD9DC4 /* Frameworks */,
+				A77AD1401F2993EE00BD9DC4 /* Resources */,
+				626277D6B4A66EB989996876 /* [CP] Embed Pods Frameworks */,
+				9BC2C09B895B24AF8B30B5C9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A77AD1441F2993EE00BD9DC4 /* PBXTargetDependency */,
+			);
+			name = "goya2017-logsTests";
+			productName = "goya2017-logsTests";
+			productReference = A77AD1421F2993EE00BD9DC4 /* goya2017-logsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A77AD14C1F2993EE00BD9DC4 /* goya2017-logsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77AD15C1F2993EE00BD9DC4 /* Build configuration list for PBXNativeTarget "goya2017-logsUITests" */;
+			buildPhases = (
+				85DD6CE80D7825860C658999 /* [CP] Check Pods Manifest.lock */,
+				A77AD1491F2993EE00BD9DC4 /* Sources */,
+				A77AD14A1F2993EE00BD9DC4 /* Frameworks */,
+				A77AD14B1F2993EE00BD9DC4 /* Resources */,
+				F97D0C6A0D805EC1A91C6E55 /* [CP] Embed Pods Frameworks */,
+				E71132018C528EC32E7585F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A77AD14F1F2993EE00BD9DC4 /* PBXTargetDependency */,
+			);
+			name = "goya2017-logsUITests";
+			productName = "goya2017-logsUITests";
+			productReference = A77AD14D1F2993EE00BD9DC4 /* goya2017-logsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A77AD1231F2993ED00BD9DC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = goya;
+				TargetAttributes = {
+					A77AD12A1F2993ED00BD9DC4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y44ARMYDQD;
+						ProvisioningStyle = Automatic;
+					};
+					A77AD1411F2993EE00BD9DC4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y44ARMYDQD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A77AD12A1F2993ED00BD9DC4;
+					};
+					A77AD14C1F2993EE00BD9DC4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y44ARMYDQD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A77AD12A1F2993ED00BD9DC4;
+					};
+				};
+			};
+			buildConfigurationList = A77AD1261F2993ED00BD9DC4 /* Build configuration list for PBXProject "goya2017-logs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A77AD1221F2993ED00BD9DC4;
+			productRefGroup = A77AD12C1F2993ED00BD9DC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A77AD12A1F2993ED00BD9DC4 /* goya2017-logs */,
+				A77AD1411F2993EE00BD9DC4 /* goya2017-logsTests */,
+				A77AD14C1F2993EE00BD9DC4 /* goya2017-logsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A77AD1291F2993ED00BD9DC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77AD13C1F2993ED00BD9DC4 /* LaunchScreen.storyboard in Resources */,
+				A77AD1391F2993ED00BD9DC4 /* Assets.xcassets in Resources */,
+				A77AD1341F2993ED00BD9DC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77AD1401F2993EE00BD9DC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77AD14B1F2993EE00BD9DC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FA565E284D4DD599CEF5A10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2B85AEB3C8C08691C2C4B36C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		626277D6B4A66EB989996876 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-goya2017-logsTests/Pods-goya2017-logsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85DD6CE80D7825860C658999 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BC2C09B895B24AF8B30B5C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-goya2017-logsTests/Pods-goya2017-logsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCDA9DFF9B9B50D28F740A57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-goya2017-logs/Pods-goya2017-logs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E71132018C528EC32E7585F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-goya2017-logsUITests/Pods-goya2017-logsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2FDEBF58E7892BB8DC5BAE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-goya2017-logs/Pods-goya2017-logs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97D0C6A0D805EC1A91C6E55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-goya2017-logsUITests/Pods-goya2017-logsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A77AD1271F2993ED00BD9DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B76BA91F32E09400A8171D /* PhotoSelectDelegate.swift in Sources */,
+				A77AD1621F299B9E00BD9DC4 /* NoteWriteViewController.swift in Sources */,
+				A77AD1661F29ABF200BD9DC4 /* HashTagView.swift in Sources */,
+				A77AD1311F2993ED00BD9DC4 /* MainView.swift in Sources */,
+				A77AD16A1F29BED000BD9DC4 /* Note.swift in Sources */,
+				A7B76BA51F2CDD9500A8171D /* dataCollectionView.swift in Sources */,
+				A77AD16C1F29BFFB00BD9DC4 /* HashTag.swift in Sources */,
+				A77AD1641F299D0A00BD9DC4 /* DateLabelView.swift in Sources */,
+				A77AD12F1F2993ED00BD9DC4 /* AppDelegate.swift in Sources */,
+				A77AD1681F29AD6F00BD9DC4 /* NoteTableViewCell.swift in Sources */,
+				A77AD1711F2A426F00BD9DC4 /* ContentViewController.swift in Sources */,
+				A77AD1371F2993ED00BD9DC4 /* goya2017_logs.xcdatamodeld in Sources */,
+				A7B76BA71F2CDDA700A8171D /* resultCollectionview.swift in Sources */,
+				A77AD16E1F2A3BD800BD9DC4 /* Image.swift in Sources */,
+				A77AD1781F2A60A300BD9DC4 /* PhotoSelectViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77AD13E1F2993EE00BD9DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77AD1471F2993EE00BD9DC4 /* goya2017_logsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77AD1491F2993EE00BD9DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77AD1521F2993EE00BD9DC4 /* goya2017_logsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A77AD1441F2993EE00BD9DC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77AD12A1F2993ED00BD9DC4 /* goya2017-logs */;
+			targetProxy = A77AD1431F2993EE00BD9DC4 /* PBXContainerItemProxy */;
+		};
+		A77AD14F1F2993EE00BD9DC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77AD12A1F2993ED00BD9DC4 /* goya2017-logs */;
+			targetProxy = A77AD14E1F2993EE00BD9DC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A77AD1321F2993ED00BD9DC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77AD1331F2993ED00BD9DC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A77AD13A1F2993ED00BD9DC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77AD13B1F2993ED00BD9DC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A77AD1541F2993EE00BD9DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A77AD1551F2993EE00BD9DC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A77AD1571F2993EE00BD9DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5A8CF2CFD805CD54DFE95A /* Pods-goya2017-logs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y44ARMYDQD;
+				INFOPLIST_FILE = "goya2017-logs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goya-ent.woosuntest.goya2017-logs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A77AD1581F2993EE00BD9DC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9F57F8676A7F5C9B091432 /* Pods-goya2017-logs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y44ARMYDQD;
+				INFOPLIST_FILE = "goya2017-logs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goya-ent.woosuntest.goya2017-logs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A77AD15A1F2993EE00BD9DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AEAA22F2C780C6394AA7879 /* Pods-goya2017-logsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y44ARMYDQD;
+				INFOPLIST_FILE = "goya2017-logsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goya-ent.woosuntest.goya2017-logsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goya2017-logs.app/goya2017-logs";
+			};
+			name = Debug;
+		};
+		A77AD15B1F2993EE00BD9DC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23588913FA247EC0561CAB4C /* Pods-goya2017-logsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y44ARMYDQD;
+				INFOPLIST_FILE = "goya2017-logsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goya-ent.woosuntest.goya2017-logsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goya2017-logs.app/goya2017-logs";
+			};
+			name = Release;
+		};
+		A77AD15D1F2993EE00BD9DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588C6813776A9D5E1418A2F6 /* Pods-goya2017-logsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y44ARMYDQD;
+				INFOPLIST_FILE = "goya2017-logsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goya-ent.woosuntest.goya2017-logsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "goya2017-logs";
+			};
+			name = Debug;
+		};
+		A77AD15E1F2993EE00BD9DC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5EC791E3FEBB46B712ADF0D /* Pods-goya2017-logsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y44ARMYDQD;
+				INFOPLIST_FILE = "goya2017-logsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goya-ent.woosuntest.goya2017-logsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "goya2017-logs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A77AD1261F2993ED00BD9DC4 /* Build configuration list for PBXProject "goya2017-logs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77AD1541F2993EE00BD9DC4 /* Debug */,
+				A77AD1551F2993EE00BD9DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77AD1561F2993EE00BD9DC4 /* Build configuration list for PBXNativeTarget "goya2017-logs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77AD1571F2993EE00BD9DC4 /* Debug */,
+				A77AD1581F2993EE00BD9DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77AD1591F2993EE00BD9DC4 /* Build configuration list for PBXNativeTarget "goya2017-logsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77AD15A1F2993EE00BD9DC4 /* Debug */,
+				A77AD15B1F2993EE00BD9DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77AD15C1F2993EE00BD9DC4 /* Build configuration list for PBXNativeTarget "goya2017-logsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77AD15D1F2993EE00BD9DC4 /* Debug */,
+				A77AD15E1F2993EE00BD9DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A77AD1351F2993ED00BD9DC4 /* goya2017_logs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A77AD1361F2993ED00BD9DC4 /* goya2017_logs.xcdatamodel */,
+			);
+			currentVersion = A77AD1361F2993ED00BD9DC4 /* goya2017_logs.xcdatamodel */;
+			path = goya2017_logs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A77AD1231F2993ED00BD9DC4 /* Project object */;
+}

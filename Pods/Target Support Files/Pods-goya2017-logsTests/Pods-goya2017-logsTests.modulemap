@@ -1,0 +1,6 @@
+framework module Pods_goya2017_logsTests {
+  umbrella header "Pods-goya2017-logsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

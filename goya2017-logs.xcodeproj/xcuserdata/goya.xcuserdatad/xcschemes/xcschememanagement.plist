@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>goya2017-logs.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A77AD12A1F2993ED00BD9DC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A77AD1411F2993EE00BD9DC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A77AD14C1F2993EE00BD9DC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
