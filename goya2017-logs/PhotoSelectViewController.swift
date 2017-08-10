@@ -10,15 +10,44 @@ import UIKit
 import Photos
 import RealmSwift
 
-class PhotoSelectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class PhotoSelectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate, UIImagePickerControllerDelegate, AVCapturePhotoCaptureDelegate {
     
     var delegate: PhotoSelectDelgate!
     
+    var cameraView = UIView()
+    
+    
+    //MARK: capture and crop
+    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+        if let error = error {
+            // error processs
+        } else {
+            let sampleBuffer = photoSampleBuffer
+            let previewBuffer = previewPhotoSampleBuffer
+            let dataImage = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: sampleBuffer!, previewPhotoSampleBuffer: previewBuffer)
+            if dataImage != nil {
+                let image = UIImage(data: dataImage!)!
+                let cropped = image.cgImage?.cropping(to: CGRect(x: image.size.width / 2, y: 0, width: image.size.width / 2, height: image.size.width))
+                let newImage = UIImage(cgImage: cropped!, scale: image.scale, orientation: UIImageOrientation.up)
+                
+                let iv = UIImageView(image: newImage)
+                iv.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width/2, height: view.bounds.size.height/2)
+                iv.contentMode = .scaleAspectFit
+                self.view.addSubview(iv)
+            }
+        }
+    }
+    //
     
     //MARK: Variable
     var selectedImage = [UIImage]()
     var willsaveImage = [UIImage]()
     var removalImage = [Image]()
+    
+    var captureSession = AVCaptureSession();
+    var sessionOutput = AVCapturePhotoOutput();
+    //var sessionOutputSetting = AVCapturePhotoSettings(format: [AVVideoCodecKey:AVVideoCodecJPEG]);
+    var previewLayer = AVCaptureVideoPreviewLayer();
     
      //var selectedIndexs = [Int]()
     
@@ -38,6 +67,8 @@ class PhotoSelectViewController: UIViewController, UICollectionViewDelegate, UIC
     func removalImages(images: [Image]) {
         removalImage = images
     }
+    //
+    
     //
     
     @IBAction func cancelButton(_ sender: Any) {
@@ -64,10 +95,19 @@ class PhotoSelectViewController: UIViewController, UICollectionViewDelegate, UIC
         return directory!
     }
     
+    var actionswitch : Int = 1
+    
     //MARK: Call Camera for direct capture
     @IBAction func directCaptureButton(_ sender: Any) {
         
-        let imagePicker = UIImagePickerController()
+        if actionswitch == 1 {
+            cameraOpen()
+            actionswitch -= 1
+        } else if actionswitch == 0 {
+            let sessionOutputSetting = AVCapturePhotoSettings(format: [AVVideoCodecKey:AVVideoCodecJPEG])
+            sessionOutput.capturePhoto(with: sessionOutputSetting, delegate: self)
+        }
+        /*let imagePicker = UIImagePickerController()
         
         if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
             
@@ -93,7 +133,7 @@ class PhotoSelectViewController: UIViewController, UICollectionViewDelegate, UIC
             alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
             
             self.present(alert, animated: true, completion: nil)
-        }
+        }*/
     }
 
 
@@ -110,6 +150,43 @@ class PhotoSelectViewController: UIViewController, UICollectionViewDelegate, UIC
         
         dataCollectionView.getPhoto()
         
+    }
+    
+    func cameraOpen() {
+        
+        let cameraView = UIView(frame: CGRect(x: resultCollectionView.frame.minX, y: resultCollectionView.frame.minY, width: resultCollectionView.bounds.width, height: resultCollectionView.bounds.height))
+        cameraView.tag = 199;
+        cameraView.backgroundColor = UIColor.white
+        
+        self.view.addSubview(cameraView)
+        
+        let deviceDiscoverySession = AVCaptureDeviceDiscoverySession(deviceTypes: [AVCaptureDeviceType.builtInDualCamera, AVCaptureDeviceType.builtInWideAngleCamera, AVCaptureDeviceType.builtInTelephotoCamera], mediaType: AVMediaTypeVideo, position: AVCaptureDevicePosition.front)
+        for device in (deviceDiscoverySession?.devices)! {
+            if(device.position == AVCaptureDevicePosition.front){
+                do{
+                    let input = try AVCaptureDeviceInput(device: device)
+                    if(captureSession.canAddInput(input)){
+                        captureSession.addInput(input);
+                        
+                        if(captureSession.canAddOutput(sessionOutput)){
+                            captureSession.addOutput(sessionOutput)
+                            captureSession.startRunning()
+                            
+                            previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+                            previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+                            previewLayer.connection.videoOrientation = AVCaptureVideoOrientation.portrait
+                            
+                            previewLayer.frame = CGRect(x: 0, y: 0, width: cameraView.bounds.width, height: cameraView.bounds.height)
+                            
+                            cameraView.layer.addSublayer(previewLayer)
+                        }
+                    }
+                }
+                catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

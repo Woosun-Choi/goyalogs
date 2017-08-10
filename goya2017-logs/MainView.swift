@@ -48,7 +48,7 @@ class MainView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         df.dateFormat = "yyyy-MM-dd HH:mm:DD"
         
         let title = df.string(from: note.date)
-        cell.setting(title: note.text.components(separatedBy: CharacterSet.newlines).first! , text: note.text)
+        cell.setting(title: note.text.components(separatedBy: CharacterSet.newlines).first! , text: title)
         
         if note.images.count != 0 {
             let path = getDocumentDirectory() + "/img/" + note.images[0].fileName + ".jpg"

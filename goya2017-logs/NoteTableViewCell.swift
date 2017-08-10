@@ -17,7 +17,9 @@ class NoteTableViewCell: UITableViewCell {
     
     @IBOutlet weak var hashHolder: UIView!
     
+    @IBOutlet weak var imageviewframe: UIView!
     var nowX = 0.0
+
     
     func setting(title: String, text: String) {
         self.title.text = title

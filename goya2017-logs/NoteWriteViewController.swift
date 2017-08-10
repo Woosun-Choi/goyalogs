@@ -181,29 +181,32 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
             }
         }
         
-        for index in 0...deleteindex {
-            let path = getDocumentDirectory() + "/img/" + imageData[index].fileName + ".jpg"
-            do {
-                try FileManager.default.removeItem(atPath: path)
-            } catch _ as NSError {}
-            let thumbpath = getDocumentDirectory() + "/img/" + imageData[index].fileName + "-thumbnail.jpg"
-            do {
-                try FileManager.default.removeItem(atPath: thumbpath)
-            } catch _ as NSError {}
+        if deleteindex >= 0 {
+            for index in 0...deleteindex {
+                let path = getDocumentDirectory() + "/img/" + imageData[index].fileName + ".jpg"
+                do {
+                    try FileManager.default.removeItem(atPath: path)
+                } catch _ as NSError {}
+                let thumbpath = getDocumentDirectory() + "/img/" + imageData[index].fileName + "-thumbnail.jpg"
+                do {
+                    try FileManager.default.removeItem(atPath: thumbpath)
+                } catch _ as NSError {}
+            }
+            
+            for _ in 0...deleteindex {
+                imageData.remove(at: 0)
+            }
         }
         
-        for _ in 0...deleteindex {
-            imageData.remove(at: 0)
-        }
         
-        print(imageData.count)
-        
+        //MARK: Save in realm
         let realm = try! Realm()
         
         try! realm.write {
             
             if note != nil {
                 self.note.text = textField.text
+
                 self.note.date = Date()
                 
                 self.note.images.removeAll()
@@ -215,13 +218,16 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
             }
             
             else {
-            
-                note = realm.create(Note.self)
-                note.text = textField.text
-                note.date = Date()
-            
-                for img in imageData {
-                    note.images.append(img)
+                
+                if !textField.text.characters.isEmpty || !hashTagList.isEmpty || !willsaveImage.isEmpty {
+                    
+                    note = realm.create(Note.self)
+                    note.text = textField.text
+                    note.date = Date()
+                
+                    for img in imageData {
+                        note.images.append(img)
+                    }
                 }
             }
         }
@@ -298,6 +304,8 @@ class NoteWriteViewController: UIViewController, UIImagePickerControllerDelegate
                 imageData.append(img)
             }
         }
+        
+        
         
         
         //MARK: Subview Settings

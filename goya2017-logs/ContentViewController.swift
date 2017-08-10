@@ -23,7 +23,6 @@ class ContentViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         ContentImageView.image = ContentImage
-        ContentImageView.bounds = ContentViewController.accessibilityFrame()
         
     }
 
